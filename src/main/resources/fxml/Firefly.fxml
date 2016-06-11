@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="390.0" maxWidth="541.0" prefHeight="390.0" prefWidth="541.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.core.luciernagasfx.FireflyController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <ToolBar prefWidth="540.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <Button fx:id="new_button" mnemonicParsing="false" text="New test">
+          <graphic>
+            <ImageView fitHeight="24.0" fitWidth="24.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../img/add.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Label text="You can test the algorithm web via in" />
+        <Hyperlink fx:id="firefly_link" alignment="TOP_RIGHT" text="http://firefly-idsoft.rhcloud.com/" textFill="#0083cc" />
+      </items>
+    </ToolBar>
+    <BorderPane layoutX="0.0" layoutY="31.0" prefHeight="359.0" prefWidth="540.0">
+      <bottom>
+        <ToolBar BorderPane.alignment="BOTTOM_LEFT">
+          <items>
+            <Label text="By Gonza &amp; Nico. 2016. All rights reserved" textFill="GREY" />
+          </items>
+          <BorderPane.margin>
+            <Insets fx:id="x1" />
+          </BorderPane.margin>
+        </ToolBar>
+      </bottom>
+      <left>
+        <Pane prefHeight="270.0" prefWidth="164.0">
+          <children>
+            <Separator layoutX="161.0" layoutY="-16.0" orientation="VERTICAL" prefHeight="255.0" />
+            <TabPane layoutX="10.0" layoutY="0.0" prefHeight="244.0" prefWidth="151.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Inputs">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <TextField fx:id="first_operatoor_text" alignment="CENTER" layoutX="4.0" layoutY="13.0" prefWidth="140.0" promptText="First operator" />
+                        <TextField fx:id="second_operatoor_text" alignment="CENTER" layoutX="4.0" layoutY="42.0" prefWidth="140.0" promptText="Second operator" />
+                        <TextField fx:id="result_text" alignment="CENTER" layoutX="4.0" layoutY="72.0" prefWidth="140.0" promptText="Result" />
+                        <Button fx:id="run_button" layoutX="4.0" layoutY="143.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="140.0" text="Run test">
+                          <graphic>
+                            <ImageView fitHeight="19.0" fitWidth="19.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                <Image url="@../img/play.png" />
+                              </image>
+                            </ImageView>
+                          </graphic>
+                        </Button>
+                        <ComboBox fx:id="operation_combo" layoutX="4.0" layoutY="107.0" prefHeight="21.0" prefWidth="140.0" promptText="Operation">
+                          <items>
+                            <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="Addition (+)" />
+                              <String fx:value="Sustraction (-)" />
+                            </FXCollections>
+                          </items>
+                        </ComboBox>
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+          </children>
+        </Pane>
+      </left>
+      <right>
+        <TabPane prefHeight="244.0" prefWidth="397.0" tabClosingPolicy="UNAVAILABLE" BorderPane.margin="$x1">
+          <tabs>
+            <Tab text="Result test">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <TextArea fx:id="result_textarea" editable="false" prefHeight="157.0" prefWidth="347.0" promptText="Result" wrapText="true" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="14.0" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Best firefly trend">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <LineChart fx:id="best_line_chart" layoutX="7.0" layoutY="7.0" minHeight="148.0" prefHeight="201.0" prefWidth="356.0">
+                      <xAxis>
+                        <NumberAxis />
+                      </xAxis>
+                      <yAxis>
+                        <NumberAxis />
+                      </yAxis>
+                    </LineChart>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Test samples">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <TextArea editable="false" layoutX="14.0" layoutY="14.0" prefWidth="349.0" text="SEND + MORE = MONEY&#10;MAMA + PAPA = BEBE&#10;LOVE + PLACE = HOTEL&#10;EARTH + URANUS = SATURN&#10;PAPER + IDEAS = WORKS&#10;&#10;Be careful with the length of inputs.&#10;The sustraction is equals to addition. &#10;&#10;" wrapText="true" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </right>
+      <top>
+        <AnchorPane prefHeight="89.0" prefWidth="532.0">
+          <children>
+            <Pane layoutX="340.0" layoutY="15.0" prefHeight="64.0" prefWidth="108.0" style="-fx-border-color: -fx-text-box-border;&#10;-fx-border-width: 2;">
+              <children>
+                <Label fx:id="fireflies_label" layoutX="38.0" layoutY="4.0" text="10">
+                  <font>
+                    <Font name="Calibri" size="35.0" />
+                  </font>
+                  <textFill>
+                    <Color blue="0.500" green="0.500" red="0.500" fx:id="x2" />
+                  </textFill>
+                </Label>
+                <Label layoutX="4.0" layoutY="38.0" text="fireflies population" />
+              </children>
+            </Pane>
+            <Slider fx:id="fireflies_slider" layoutX="12.0" layoutY="32.0" majorTickUnit="5.0" max="30.0" min="3.0" minorTickCount="5" showTickLabels="true" showTickMarks="true" />
+            <Label layoutX="32.0" layoutY="16.0" text="Number of fireflies" />
+            <Separator layoutX="161.0" layoutY="20.0" orientation="VERTICAL" prefHeight="53.0" />
+            <Slider fx:id="iterations_slider" layoutX="176.0" layoutY="32.0" majorTickUnit="10.0" max="50.0" min="3.0" minorTickCount="5" showTickLabels="true" showTickMarks="true" />
+            <Label layoutX="196.0" layoutY="16.0" text="Number of iterations" />
+            <Separator layoutX="329.0" layoutY="20.0" orientation="VERTICAL" prefHeight="64.0" />
+            <Separator layoutX="14.0" layoutY="84.0" prefWidth="526.0" />
+            <Pane layoutX="452.0" prefHeight="64.0" prefWidth="88.0" style="-fx-border-color: -fx-text-box-border;&#10;-fx-border-width: 2;" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="15.0">
+              <children>
+                <Label layoutX="18.0" layoutY="38.0" text="Iterations" />
+                <Label fx:id="iterations_label" layoutX="34.0" layoutY="3.0" prefHeight="43.0" text="10" textFill="$x2">
+                  <font>
+                    <Font name="Calibri" size="30.0" />
+                  </font>
+                </Label>
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

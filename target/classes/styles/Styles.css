@@ -1,0 +1,6 @@
+.button {
+    -fx-font-weight: bold;
+}
+.hover-point{
+    -fx-background-color: ORANGE;
+}
