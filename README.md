@@ -1,4 +1,4 @@
-<div style='align:center'>Download the latest version of fireflyFx here</div>
+Download the latest version of fireflyFx here (see the ![requirements](https://github.com/yogonza524/fireflyFx#requirments) for lunch)
 [<img src="http://filesbride.com/files/password/download.png">](https://github.com/yogonza524/fireflyFx/releases/download/1.0.0/fireflyFx-1.0.jar)
 # fireflyFx
 
