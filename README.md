@@ -1,4 +1,4 @@
--> Download the latest version of fireflyFx here <-
+<div style='align:center'>Download the latest version of fireflyFx here</div>
 [<img src="http://filesbride.com/files/password/download.png">](https://github.com/yogonza524/fireflyFx/releases/download/1.0.0/fireflyFx-1.0.jar)
 # fireflyFx
 
