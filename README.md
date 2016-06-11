@@ -1,4 +1,4 @@
-Download the latest version of fireflyFx here
+-> Download the latest version of fireflyFx here <-
 [<img src="http://filesbride.com/files/password/download.png">](https://github.com/yogonza524/fireflyFx/releases/download/1.0.0/fireflyFx-1.0.jar)
 # fireflyFx
 
