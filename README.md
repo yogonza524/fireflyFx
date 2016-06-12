@@ -1,4 +1,4 @@
-[<img src="http://filesbride.com/files/password/download.png" style='text-align:left'>](https://github.com/yogonza524/fireflyFx/releases/download/1.0.0/fireflyFx-1.0.jar)
+[<img src="http://images.freecreatives.com/wp-content/uploads/2015/05/Download-button-1712111121111111.png" style='text-align:left'>](https://github.com/yogonza524/fireflyFx/releases/download/1.0.0/fireflyFx-1.0.jar)
 
 Download the latest version of fireflyFx here (see the [requirements](#requirments) for lunch)
 # fireflyFx
